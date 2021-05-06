@@ -14,4 +14,6 @@ const mix = require('laravel-mix');
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .sourceMaps()
-    .version();
+    .version()
+    .copy('node_modules/layui-src/dist/css/modules/', 'public/js/css/modules/')
+    .copy('node_modules/mathjax/es5/output/chtml/', 'public/js/output/chtml');

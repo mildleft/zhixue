@@ -10,6 +10,7 @@
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body>
+    \(\frac ab\)
         <div>
             @if (Route::has('login'))
                 <div>
